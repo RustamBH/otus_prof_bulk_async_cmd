@@ -2,7 +2,7 @@
 #include <chrono>
 
 
-void CommandHandler::Handle(const BlockCmd& block) noexcept
+void CmdHandler::Handle(const BlockCmd& block) noexcept
 {
 	if (!block.IsValid())
 	{
