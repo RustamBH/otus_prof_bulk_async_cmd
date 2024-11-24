@@ -51,7 +51,7 @@ public:
 
 
 // An asynchronous logger class that logs commands asynchronously to console and file
-class LogerAsync final
+class LogerAsync
 {
 public:
 	LogerAsync() noexcept;
