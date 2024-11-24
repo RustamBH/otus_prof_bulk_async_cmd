@@ -32,6 +32,13 @@ set_target_properties(${LIB_NAME} ${BIN_NAME}
 	CXX_STANDARD_REQUIRED ON
 )
 
+# properties
+set_target_properties(${LIB_NAME} ${BIN_NAME}
+	PROPERTIES
+	CXX_STANDARD 20
+	CXX_STANDARD_REQUIRED ON
+)
+
 #--------------------------------------------------------------------------------------------------
 # deb pkg
 install(TARGETS ${LIB_NAME} RUNTIME DESTINATION bin)
