@@ -4,7 +4,7 @@
 
 
 // A command handler class that processes command blocks and logs them asynchronously.
-class CmdHandler final
+class CmdHandler
 {
 public:
 	// Handles a command block by processing it and logging it asynchronously
