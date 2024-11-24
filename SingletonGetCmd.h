@@ -16,7 +16,7 @@ public:
 
 private:	
 	std::map<std::size_t, BlockCmd> m_cmd_blocks; // map of handles to command blocks
-	CommandHandler m_cmd_handler{}; // command handler	
+	CmdHandler m_cmd_handler{}; // command handler	
 	std::size_t m_handle = 0; // current handle
 	std::mutex m_mutex; // mutex for synchronization
 };
