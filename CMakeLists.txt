@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.5)
 set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
 set(PROJECT_VESRION 0.0.${PATCH_VERSION})
 
-project(async VERSION ${PROJECT_VESRION})
+
 
 #--------------------------------------------------------------------------------------------------
 if(WIN32)
@@ -18,7 +18,8 @@ endif()
 
 #--------------------------------------------------------------------------------------------------
 # project
-project(${LIB_NAME})
+# project(${LIB_NAME})
+project(${LIB_NAME} VERSION ${PROJECT_VESRION})
 
 if (MSVC)
 	# enable VS-Solution filters support
