@@ -6,9 +6,6 @@ set(PROJECT_VESRION 0.0.${PATCH_VERSION})
 project(async VERSION ${PROJECT_VESRION})
 
 #--------------------------------------------------------------------------------------------------
-# variables
-set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR})
-
 if(WIN32)
 	set(LIB_NAME libasync)
 	set(BIN_NAME async)
@@ -32,15 +29,15 @@ endif (MSVC)
 #--------------------------------------------------------------------------------------------------
 # builds
 add_library(${LIB_NAME} STATIC
-	${SRC_DIR}/CmdHandler.cpp
-	${SRC_DIR}/SingletonGetCmd.cpp
-	${SRC_DIR}/LogerAsync.cpp
-	${SRC_DIR}/async.cpp
+	CmdHandler.cpp
+	SingletonGetCmd.cpp
+	LogerAsync.cpp
+	async.cpp
 )
 
 add_executable(${BIN_NAME}
-	${SRC_DIR}/async.cpp
-	${SRC_DIR}/main.cpp
+	async.cpp
+	main.cpp
 )
 
 
